@@ -1,0 +1,86 @@
+In previous class we discussed how browser sends a request to the
+server
+
+HTTP -> Hyper Text Transfer Protocol
+HTTP is just a set of rules or language used for communication between browser and server.
+             HTTP
+browser <------------> server 
+ 
+HTTP = communication language
+
+user -> we/us
+waiter -> browser 
+Manager/person -> DNS
+kitchen -> server
+ Request = asking something from server 
+
+request method = GET
+
+Types of Request:
+----------------------------
+There are different types of requests......
+GET -> to get data 
+POST -> to send data 
+
+eg:
+ Opening any site like google -> GET request
+ Login form ->  POST request 
+
+Response :
+----------------
+HTML page 
+JSON data
+Image
+text
+Video
+Error 
+
+Response = answer from server 
+
+Status Codes :
+-----------------------
+Now server tells whether request is successful or not....
+That is called status code.
+
+1. 200 -> Success
+2. 404 -> Not Found
+3. 403 -> Not allowed -> Access denied
+4. 500 -> Server error 
+
+HTTP :HyperText Transfer Protocol 
+-------------------
+HyperText = clickable text/Linked content
+Transfer = moving something from one place to another 
+      -> sendoing data 
+Protocol = rules for communication
+
+HTTP -> Rules for transferring web data between browser and server 
+
+HTML -> HyperText MarkUp Language:
+-------------------------------
+
+Stateless Protocol :
+-----------------------
+The server does not remember the previous requests
+
+when u send a request.....
+-> server processes it 
+-> sends response
+-> then forgets everything
+
+next request = treated as completely new 
+
+HTTP and HTTPS....
+-> each request is independent
+
+for remembering our details server uses cookies,sessions,tokens
+
+
+
+
+
+
+
+
+
+

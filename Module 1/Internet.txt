@@ -1,0 +1,149 @@
+Internet:
+------------------
+Internet is nothing but a network that connects computers.
+
+Website:
+--------------------
+A website is just a collection of files.
+
+it is combination of HTML-> HyperText MarkUp Language -> it defines the structure of the site
+
+Css -> Cascading Style Sheet -> it defines teh design of the website
+
+JavaScript -> Behaviour
+ 
+Server:
+----------------------
+where the website is stored
+It is computer connected to the internet
+which keeps running always 
+and process the incoming requests.
+
+
+Step 1 : User gives a request
+----------------------
+That action is called as a request
+
+Step 2 : Browser takes your request:
+----------------------------
+Browser -> google, chrome, opera mini, morcrosoft edge, mozilla firefox etc... , safari 
+The browser is like a helper 
+
+it takes tour request and starts the work of finding the website.
+
+you/us -> user 
+waiter -> helper/browser
+chef/kitchen person -> server 
+
+Step 4 : DNS helps find the address:
+------------------------
+DNS -> domain naming system 
+DNS helps the browser to find the correct address of the website.
+
+Step 5 : Request goes to the server:
+------------------------
+Request = question
+Response = answer
+ Flow :
+----------------------
+user -> Browser -> DNS -> Server -> Response -> Browser shows website
+
+This full process happens in a few milliseconds 
+That is why websites open so fast
+
+user -> punith
+Browser -> 
+
+
+Who starts the process?
+user 
+
+Who takes our request?
+Browser 
+
+Who finds the address?
+DNS
+
+Process:
+--------------
+4 people involve :
+1. User-> we give the request to the browser
+2. Browser -> he takes the request from server and goes to search the server 
+3. DNS -> the person who finds the address and tells the browser 
+4. Server -> he is the person who send ths website data as the response  
+
+Who sends the website data?
+Server 
+what is response?
+data coming back 
+who finds the address?
+DNS 
+
+Hosting:
+-----------------------
+Hosting means storing your website on a server..
+so that anyone can access it anytime
+eg:
+godaddy
+vercel -> free platform to host your site 
+hostinger
+
+
+
+Summary:
+---------------
+Full stack application
+internet
+website
+server
+browser
+dns
+ip address 
+hosting
+internet flow 
+
+Network -> group of devices connected together 
+eg: wifi
+computers in a lab 
+office systems connected 
+small or local connection
+limited 
+
+Internet -> it is a network of networks 
+large connection
+world wide 
+Lan -> Local Area Network -> small area
+eg: wifi 
+Man -> Metropolitan area network ->medium 
+eg: cable tv network 
+Wan -> wide area network  -> world wide network 
+eg: google 
+youtube 
+Instagram 
+amazon 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
