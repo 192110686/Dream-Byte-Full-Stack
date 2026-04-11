@@ -1,0 +1,169 @@
+HTML: Mainly focuses on structure.
+------------
+HyperText Markup Language
+It is the first building block of the web developement
+
+HTML is the language used to structure content on a webpage
+It tells the browser what each piece of content is
+eg
+this is a heading,
+this is a paragraph
+
+HyperText:
+----------------------------
+HyperText means clickable or connected text.
+When u click a text and move to another page, that kind of behaviour is called HyperText
+
+MarkUp:
+--------------------
+Markup means marking or labeling the content:
+
+we are not just writing the text. We are adding the meaning to the text
+
+Language:
+--------------------
+HTML is the language we use to communicate structure to the browser
+HTML is the language to tell browser what to display
+
+Why HTML Came?
+-------------------------
+HTML came so that all browsers can understand 
+and display webpages in a structured way.
+
+Why do we need HTML?
+-----------------------
+HTML is the skeleton of a webpage.
+What does HTML DO?
+-----------------------
+HTML tells browser what to show and how content is organised.
+It creates the structure.
+HTML = structure.
+CSS = styling
+JavaScript = behaviour
+
+
+What is HTML Syntax?
+----------------------
+Syntax means the correct way of writing code or language
+wrong:
+I school to go
+correct:
+I go to school
+
+HTML syntax basic pattern:
+-------------------------
+<tagname>Content</tagname>
+
+It has 3 parts:
+1. Opening tag
+2. Content
+3. Closing tag
+eg:
+---
+<h1>Hello</h1>
+
+What is a Tag: A tag gives the identity to content.
+-------------------
+A tag is a keyword written inside angle brackets
+<h1>
+<p>
+<a>
+<h1>Hello</h1>
+<p> This is a paragraph</p>
+
+HTML Document Structure:
+-----------------------------
+<!DOCTYPE html>
+    <head>
+        <title>My First Web Page
+        </title>
+    </head>
+    <body>
+        <h1>Hello Students</h1>
+        <p>This is my first webpage.</p>
+    </body>
+</html>
+
+<html>
+------------
+This is the root element of the whole HTML page.
+it tells the browser that everything inside bel;ongs to this HTML document
+
+<head>
+---------------------
+This contains page information and setup
+it is not the main visible content.
+Inside this head we usually keep:
+1. title
+2. meta information
+3. links to css 
+
+<title>:
+----------------
+This is shown in the browser tab
+Not inside webpage body, but on tab title
+
+<body> :
+-------------------------
+This contains everything the user actually sees on the webpage
+eg:
+headings
+paragraphs
+
+<!DOCTYPE html> 
+-------------------------
+It is a declaration(Not a tag) that tells the browser "This document is written in HTML5"
+Browser uses the latest HTML5 rules to read the content
+
+It avoids Quirks Mode
+It ensures consistency
+
+<!DOCTYPE HTML PUBLIC "-//w3c//DTD HTML 4.01//EN">
+
+<!DOCTYPE html>
+
+Heading Tags:
+-------------------
+Heading tags are used for titles and sub titles
+
+6 types of heading tags 
+------------------
+<h1> = most important/biggest
+<h2> 
+<h3>
+<h4>
+<h5>
+<h6> = least important/smallest
+
+Paragraph Tag:
+---------------------
+<p> This is a paragraph. It is used to write normal content on a webpage.</p>
+-> paragraph gives readable text Structure.
+
+</br> :
+--------------
+1. self closing tags
+2. it is used to break the lines 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
