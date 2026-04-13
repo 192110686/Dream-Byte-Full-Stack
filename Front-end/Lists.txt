@@ -1,0 +1,107 @@
+Lists:
+--------------------
+-> Collection of items.
+A list in HTML is used when we want to show multiple related items in an a organized way.
+
+Fruits:
+---------
+1 apple 
+2 banana 
+3 jackfruit
+4 sitaphal 
+5 orange 
+
+Types of Lists in HTML:
+-------------------------
+1. unordered List
+2. Ordered List
+3. Description List
+
+Unordered List:<ul>
+--------------------
+An unordered list is used when the order of items is not important
+
+That means even if we change the order the meaning does not change
+eg:
+Shopping List:
+.Eggs
+.Milk
+.Rice
+
+Syntax:
+----------------
+ul-> unordered list
+li -> list item -> it represents that the content            should appear with bullet points
+
+<ul>
+  <li>Apple<li> 
+  <li>Mango<li>
+  <li>Orange<li>
+<ul>
+
+Ordered List<ol>:
+---------------------
+An ordered list is used when the order matters.
+If the sequence changes, the meaning or result may change.
+
+EG:
+Steps to make tea:
+  1. Boil water
+  2. Add tea powder
+  3. Add milk
+  4. Serve
+
+Syntax:
+-------------
+ol-> ordered list -> container 
+li-> list item -> in default we get 1 , 2 , 3  as the sequence 
+
+<ol>
+  <li>Boil water</li>
+  <li>Add tea powder</li>
+</ol>
+
+Type Attribute:
+-----------------------
+The type attribute changes the numbering style.
+<ol type = "1">
+  <li>HTML</li>
+</ol>
+
+Possible Values:
+---------
+A -> A,B,C,D
+a -> a,b,c,d
+1 -> 1,2,3,4
+I -> I,II,III,IV,V
+i -> i,ii,iii,iv
+
+Start Attribute: -> used to begin the numbering from a specific value
+----------------------
+<ol start="3">
+    <li>chapter three</li>
+    <li> chapter four</li>
+</ol>
+
+-> to continue previous list
+-> to show part of a sequence
+- to resume some numbering
+
+reversed attribute:
+------------------
+This shows numbers in reverse order.
+ eg:
+<ol reversed>
+  <li> wakeup</li>
+  <li>brush</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
