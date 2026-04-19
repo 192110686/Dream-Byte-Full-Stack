@@ -1,0 +1,130 @@
+Anchor tag:
+------------------------
+So anchor tag is used to create a clickable link.
+The anchor tag is written as:
+<a>.....</a>
+
+-> It is used to create a link
+-> anchor tag is one of the most important HTML tags because it helps us to connect content.
+
+-> Anchor tag is like a bridge between two places.
+
+Basic Syntax of anchor tag:
+---------------------------
+<a href = "https://www.google.com"> Go To Google</a>
+
+<a> :
+-----
+This is the anchor tag opening.
+
+href: stands for HyperText Reference.
+-----
+It tells the browser where should it go when the user clicks this link.
+
+https://www.google.com:
+------------------------
+This is the destination
+
+</a>:
+-----
+This is the closing tag of the anchor tag
+
+What is an attribute?
+--------------------
+An attribute gives extra information to an HTML tag
+ In anchor tag, attributes tell:
+
+-> where to go
+-> how to open
+-> what extra hint to show
+->whether to download
+->what relation exists between the connected pages 
+
+So attributes increases the power of the tag.
+
+Most important anchor tag Attributes:
+-------------------------
+->href
+->target
+->title
+->download
+->id
+->mailto:
+->tel
+
+href attribute:
+------------------
+href is the address of the link
+-> without href, the anchor tag is incomplete for navigation.
+-> href tells the link destination.
+
+Types of links using href:
+-------------------
+1. External Link
+-------------------
+This takes the user to another website.
+ eg:<a href="https://www.youtube.com">Open Youtube</a>
+
+2. Internal Link
+-----------------
+This takes the user to another page inside the same project
+ eg: <a href="about.html"> Go to About Page</a>
+
+3. Same-page Link
+------------------
+This takes the user to another section in the same page.
+ eg: <a href="#contact">Contact us</a>
+
+-> This uses # contact, which refers to an id="contact" somewhere in the same page.
+
+What is id?
+----------------
+id is an attribute, it is used to give a unique name to an element.
+why do we use it?
+------------------
+we use it when we want to:
+-> identify one specific element
+-> jump to that element from a link
+-> target it later with css or javascript
+
+how do we write it?
+----------------
+<p id="contact"> Contact Us</p> -> for same page links we use # in href 
+-> for other links like we use without #
+
+how do we link to it?
+-----------------
+<a href="#contact">Contact page</a>
+
+target attribute:
+-------------
+target tells the browser where to open the link.
+why do we use it?
+--------------------------
+sometimes we want the new page to open:
+-> in the same tab
+-> in a new tab
+
+Common values:
+--------------
+1. _self:
+-------------
+This opens the link in the same tab
+This is the default behaviour
+
+when to use :
+-----------
+ use _self for normal navigation inside your site
+
+2. _blank:
+------------
+This opens the link in a new tab
+
+when to use:
+--------------
+use _blank when linking to external websites and you do not want users to leave your current site completely. 
+
+
+
+
+

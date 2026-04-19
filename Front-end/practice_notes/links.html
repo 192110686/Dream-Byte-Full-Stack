@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anchor Tag Full Example</title>
+</head>
+<body>
+
+  <h1>Learning Anchor Tag in HTML</h1>
+
+  <p>
+    This page demonstrates different uses of the anchor tag.
+    We will see external links, internal links, same-page links,
+    email links, phone links, and download links.
+  </p>
+
+  <h2>1. External Link</h2>
+  <p>
+    Click the link below to open Google in a new tab.
+  </p>
+  <a href="https://www.google.com" target="_blank" title="Open Google in a new tab">
+    Visit Google
+  </a>
+
+  <h2>2. Internal Link</h2>
+  <p>
+    Click the link below to open another page in the same project.
+  </p>
+  <a href="about.html" title="Go to About page">
+    Go to About Page
+  </a>
+
+  <h2>3. Email Link</h2>
+  <p>
+    Click the link below to send an email.
+  </p>
+  <a href="mailto:teacher@example.com" title="Send an email to teacher">
+    Send Email
+  </a>
+
+  <h2>4. Phone Link</h2>
+  <p>
+    Click the link below to make a call on a mobile device.
+  </p>
+  <a href="tel:9876543210" title="Call this number">
+    Call Us
+  </a>
+
+  <h2>5. Download Link</h2>
+  <p>
+    Click the link below to download a PDF file.
+  </p>
+  <a href="sample.pdf" download title="Download the sample PDF file">
+    Download PDF
+  </a>
+
+  <h2>6. Same Page Link</h2>
+  <p>
+    Click the link below to jump to the contact section in the same page.
+  </p>
+  <a href="#contact" title="Jump to contact section">
+    Go to Contact Section
+  </a>
+
+  <h2>7. More Practice Links</h2>
+  <ul>
+    <li><a href="https://www.youtube.com" target="_blank">Open YouTube</a></li>
+    <li><a href="services.html">Go to Services Page</a></li>
+    <li><a href="#topinfo">Jump to Top Information</a></li>
+  </ul>
+
+  <h2 id="topinfo">Top Information Section</h2>
+  <p>
+    This section has an id called topinfo.
+    A same-page link can jump here by using href="#topinfo".
+  </p>
+
+  <h2 id="contact">Contact Section</h2>
+  <p>
+    This is the contact section.
+    Because it has id="contact", any link using href="#contact"
+    will jump directly to this section.
+  </p>
+
+</body>
+</html>
