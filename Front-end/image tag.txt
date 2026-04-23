@@ -1,0 +1,101 @@
+Image Tag:
+---------------
+The image tag is used to display an image on a webpage
+It is written as:
+-> <img>
+-> This is a  self closing tag
+  for example:
+----------
+<p>Text</p>
+<h1>Title</h1>
+
+Image tag does not hold content inside it, so it does not need a closing tag. 
+
+Basic Syntax of image tag:
+-------------------------
+<img src="path of image">
+
+1. <img>
+-> i want to place an image here
+
+2. src
+->This is the most important attribute.
+-> It tells the browser where the image is located.
+
+3."photo.jpg"
+-> This is the value of a src
+-> it is the image file path or image address.
+
+4.alt
+-> it stands for alternate text
+
+"A beautiful photo"
+This text appears if the image fails to load, and it also helps screen readers.
+
+Important Attributes of an Image Tag:
+----------------------------
+1. src
+2. alt
+3. width
+4. height
+5. title
+
+Src Attribute:
+-----------------------
+src stands for source
+it tells the browser where the image is coming from.
+without src, the browser does not know which image to display
+-> so src is the heart of the image tag.
+eg:
+
+<img src="flower.jpg" alt="Flower">
+
+Types of paths used in src:
+----------------------------
+there are mainly 3 ways to write the image source
+
+1. Image in the same folder
+-----------------------------
+ -> If the HTML file and the image file are in the same folder, just write the image name.
+ eg folder structure
+    ->index.html
+    ->photo.jpg
+<img src="photo.jpg" alt="Flower">
+
+2. Image inside another folder:
+-------------------------------
+The image is inside a folder called images.
+ eg folder structure
+    ->index.html
+    ->images/
+        ->flower.jpg
+<img src="images/flower.jpg" alt="Flower">
+
+3.Online image URL:
+-------------------------
+The image is being loaded from the internet
+<img src="https://tse2.mm.bing.net/th/id/OIP.CMiJRC_8-hwbXo5E2accXgHaEK?pid=Api&P=0&h=180" alt="Flower">
+
+2. alt Attribute:
+----------------------
+alt stands for alternative text
+this text is used when:
+  ->the image fails to load
+  -> the internet is low
+  -> the file is missing
+  -> a screen reader is reading the page for visually impaired users.
+
+eg: <img src="car.jpg" alt="Red sports car parked on road">
+
+3. width Attribute:
+---------------------
+
+
+
+
+
+
+
+
+
+
