@@ -89,6 +89,40 @@ eg: <img src="car.jpg" alt="Red sports car parked on road">
 
 3. width Attribute:
 ---------------------
+-> width controls the width of the image.
+-> It tells the browser how wide the image should appear.
+-> Because original images can be too large or too small.
+-> we use width to adjust the image to fit the page properly.
+ eg:
+<img src="car.jpg" alt="Car" width="300">
+
+4. Height Attribute:
+---------------------
+-> height attribute controls the height of the image.
+eg: <img src="car.jpg" alt="car" height="200">
+
+-> height controls how tall the image looks on the page.
+
+5. title attribute in a image tag:
+-----------------------------------
+-> Title gives the extra information when the user hovers over the image
+eg:
+<img src="flower.jpg" alt="Flower" title="This is a rose flower">
+-> An image can also behave like a button or link when placed inside an anchor tag.
+
+Image File Types :
+---------------------
+.jpg
+.jpeg
+-> common photos
+.gif
+-> animated images
+.png
+->transparent background possible
+.svg
+-> vector graphics logos, icons
+.webp
+-modern compressed format
 
 
 
