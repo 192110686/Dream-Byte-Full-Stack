@@ -96,6 +96,66 @@ This shows numbers in reverse order.
   <li>brush</li>
 </ol>
 
+3. Description List:
+----------------------------
+A description list is used to show: terms and their descriptions
+ eg: Topic -> explanation
+      Name -> Details
+      Term -> Meaning 
+Syntax :
+---------------
+<dl> 
+  <dt>term</dt>
+  <dd>Description</dd>
+</dl>
+
+<dl> -> Description list container
+<dt> -> Description term
+        The main title/item
+<dd> -> Description Definition
+        The explanation of an item or the title
+
+precise:
+-------------
+dt -> topic
+dd -> explanation
+
+when to use <dl> when:
+-------------------------
+-> we have to pair the data
+-> we want to show relationship
+-> we want to explain something clearly
+
+when not to use:
+----------------
+-> not for menu items -> use <ul>
+-> not for steps -> use <ol>
+
+when to use:
+-------------------
+-> definitions
+-> FAQs
+-> product features
+-> glossary
+-> profiles
+
+Multiple Descriptions: one term multiple explanations
+-------------------------
+<dl>
+   <dt> HTML</dt>
+   <dd>Structure of web page</dd>
+   <dd> Uses tags</dd>
+</dl>
+
+Multiple Terms:
+---------------------
+<dl>
+   <dt>HTML</dt>
+   <dt>CSS</dt>
+   <dd>Used in web development</dd>
+</dl>
+
+one description for multiple terms.
 
 
 
