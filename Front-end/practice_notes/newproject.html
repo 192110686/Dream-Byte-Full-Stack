@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>City Care Hospital Appointment Form</title>
+</head>
+<body>
+
+  <h1>🏥 City Care Hospital</h1>
+  <h2>Appointment Registration Form</h2>
+
+  <p>
+    Please fill this form carefully. Each field has specific rules like
+    minimum length, maximum length, number range, step value, and pattern validation.
+  </p>
+
+  <form action="appointment-success.html" method="get">
+
+    <h2>Patient Basic Details</h2>
+
+    <label>Full Name:</label><br>
+    <input 
+      type="text"
+      name="fullName"
+      placeholder="Enter full name"
+      minlength="3"
+      maxlength="30"
+      required
+    ><br><br>
+
+    <label>Username:</label><br>
+    <input 
+      type="text"
+      name="username"
+      placeholder="Only letters and numbers"
+      minlength="5"
+      maxlength="15"
+      pattern="[A-Za-z0-9]+"
+      required
+    ><br><br>
+
+    <label>Email Address:</label><br>
+    <input 
+      type="email"
+      name="email"
+      placeholder="example@gmail.com"
+      required
+    ><br><br>
+
+    <label>Password:</label><br>
+    <input 
+      type="password"
+      name="password"
+      placeholder="8 to 16 characters"
+      minlength="8"
+      maxlength="16"
+      required
+    ><br><br>
+
+    <label>Phone Number:</label><br>
+    <input 
+      type="text"
+      name="phoneNumber"
+      placeholder="Enter 10 digit number"
+      pattern="[0-9]{10}"
+      maxlength="10"
+      required
+    ><br><br>
+
+    <label>Age:</label><br>
+    <input 
+      type="number"
+      name="age"
+      min="1"
+      max="120"
+      required
+    ><br><br>
+
+    <label>Weight in kg:</label><br>
+    <input 
+      type="number"
+      name="weight"
+      min="1"
+      max="200"
+      step="0.5"
+    ><br><br>
+
+    <label>Height in cm:</label><br>
+    <input 
+      type="number"
+      name="height"
+      min="50"
+      max="250"
+      step="1"
+    ><br><br>
+
+    <h2>Gender</h2>
+
+    <input type="radio" name="gender" value="male" required> Male<br>
+    <input type="radio" name="gender" value="female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    <h2>Medical Details</h2>
+
+    <label>Symptoms:</label><br>
+    <input 
+      type="text"
+      name="symptoms"
+      placeholder="Example: fever, cough"
+      minlength="5"
+      maxlength="80"
+      required
+    ><br><br>
+
+    <label>Existing Disease:</label><br>
+    <input 
+      type="text"
+      name="existingDisease"
+      placeholder="Example: diabetes"
+      maxlength="50"
+    ><br><br>
+
+    <label>Blood Group:</label><br>
+    <input 
+      type="text"
+      name="bloodGroup"
+      placeholder="Example: A+"
+      pattern="(A|B|AB|O)[+-]"
+      maxlength="3"
+    ><br><br>
+
+    <h2>Appointment Details</h2>
+
+    <label>Appointment Date:</label><br>
+    <input 
+      type="date"
+      name="appointmentDate"
+      required
+    ><br><br>
+
+    <label>Appointment Time:</label><br>
+    <input 
+      type="time"
+      name="appointmentTime"
+      required
+    ><br><br>
+
+    <label>Emergency Level:</label><br>
+    <input 
+      type="range"
+      name="emergencyLevel"
+      min="1"
+      max="10"
+      step="1"
+    ><br><br>
+
+    <h2>Department Selection</h2>
+
+    <input type="radio" name="department" value="general" required> General Medicine<br>
+    <input type="radio" name="department" value="cardiology"> Cardiology<br>
+    <input type="radio" name="department" value="orthopedic"> Orthopedic<br>
+    <input type="radio" name="department" value="neurology"> Neurology<br><br>
+
+    <h2>Services Required</h2>
+
+    <input type="checkbox" name="service" value="consultation"> Doctor Consultation<br>
+    <input type="checkbox" name="service" value="bloodTest"> Blood Test<br>
+    <input type="checkbox" name="service" value="scan"> Scan / X-Ray<br>
+    <input type="checkbox" name="service" value="pharmacy"> Pharmacy Support<br><br>
+
+    <h2>Document Upload</h2>
+
+    <label>Upload ID Proof:</label><br>
+    <input 
+      type="file"
+      name="idProof"
+    ><br><br>
+
+    <label>Upload Medical Report:</label><br>
+    <input 
+      type="file"
+      name="medicalReport"
+    ><br><br>
+
+    <h2>System Information</h2>
+
+    <label>Patient ID:</label><br>
+    <input 
+      type="text"
+      name="patientId"
+      value="PAT1001"
+      readonly
+    ><br><br>
+
+    <label>Country:</label><br>
+    <input 
+      type="text"
+      name="country"
+      value="India"
+      disabled
+    ><br><br>
+
+    <h2>Terms and Conditions</h2>
+
+    <input 
+      type="checkbox"
+      name="terms"
+      value="accepted"
+      required
+    > I agree to the hospital appointment terms and conditions.<br><br>
+
+    <h2>Form Buttons</h2>
+
+    <input type="submit" value="Book Appointment">
+    <input type="reset" value="Clear Form">
+    <input type="button" value="Help">
+
+  </form>
+
+</body>
+</html>

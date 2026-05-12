@@ -7,11 +7,40 @@
         <h1>Student Enquiry Form</h1>
         <p>This form is used to collect basic student details.<br>
         We are using this example to understand form, action, method, and name</p>
-        <form action="submit.html" method="post">
+        <form action="submit.html" method="get">
             <label>Student Name:</label>
-            <input type="text" name="studentName"><br><br>
+            <input type="text" name="studentName" minlength="2" maxlength="5"><br><br>
             <label>Course Interested:</label>
-            <input type="text" name="course"><br><br>
+            <input type="text" name="course" value="cse" disabled ><br><br>
+            <label>Password:</label>
+            <input type="password" name="secret" pattern="(?=.*[0-9]).{8,}"><br><br>
+            <label>Contact num:</label>
+            <input type="tel" min="10" max="13"><br><br>
+            <label>Email:</label>
+            <input type="email" name="email" ><br><br>
+            <label>Age:</label>
+            <input type="number" min="10" max="120"><br><br>
+            <label>Time:</label>
+            <input type="time" step="300"><br><br>
+            <label>Date:</label>
+            <input type="date" min="2025-01-01" max="2026-05-11"><br><br>
+            <label>Volume:</label>
+            <input type="range" min="0" max="100" >
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" disabled> Male
+            <input type="radio" name="gender" value="Female">Female<br><br>
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobby">Reading
+            <input type="checkbox" name="hobby">Music
+            <input type="checkbox" name="hobby">Sports<br><br>
+            <label>Upload Resume:</label>
+            <input type="file"><br><br>
+            <label>DOB:</label>
+            <input type="date">
+            <label>Numbers:</label>
+            <input type="number" step="2.5">
+            <input type="button" value="Click Me">
+            <input type="reset" value="Reset"><br><br>
             <button type="submit">Submit Form</button>
         </form>
     </body>

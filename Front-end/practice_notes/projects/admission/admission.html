@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dreambyte Solutions Admission Form</title>
+</head>
+<body>
+
+  <h1 id="top">📝 Dreambyte Solutions ADMISSION FORM</h1>
+  <h3>Fill | Submit | Learn | Grow</h3>
+
+  <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+
+  <h2>Navigation</h2>
+  <ul>
+    <li><a href="index.html" title="Open home page">Home</a></li>
+    <li><a href="courses.html" title="View courses">Courses</a></li>
+    <li><a href="admission.html" title="Open admission form">Admission Form</a></li>
+  </ul>
+
+  <img src="images/admission.png" alt="Admission Banner" width="700" height="500" title="Admission Banner">
+
+  <h2>Admission Instructions</h2>
+  <p>
+    Please fill the admission form with correct details. This form is created
+    to collect basic student information, course interest, preferred class timing,
+    and document upload.
+  </p>
+
+  <h2>Before Filling the Form</h2>
+  <ul>
+    <li>Check available courses</li>
+    <li>Keep your email ready</li>
+    <li>Keep ID proof ready for upload</li>
+    <li>Select the course you are interested in</li>
+  </ul>
+
+  <h2>Admission Process</h2>
+  <ol type="1">
+    <li>Fill basic details</li>
+    <li>Select course and mode</li>
+    <li>Upload ID proof</li>
+    <li>Submit the form</li>
+    <li>Wait for confirmation</li>
+  </ol>
+
+  <h2>Admission Form</h2>
+
+  <form action="submit.html" method="get">
+
+    <h3>Basic Details</h3>
+
+    <label>Name:</label><br>
+    <input type="text" name="fullName" placeholder="Enter your Full Name" required ><br><br>
+
+    <label>Email Address:</label><br>
+    <input type="email" name="email" placeholder="Domain@gmail.com" value="abc@gmail.com" readonly><br><br>
+
+    <label>Create Password:</label><br>
+    <input type="password" name="password" placeholder="must be more than 8 characters"><br><br>
+
+    <label>Age:</label><br>
+    <input type="number" name="age" value="21"><br><br>
+
+    <label>Date of Birth:</label><br>
+    <input type="date" name="dob"><br><br>
+
+    <label>Preferred Class Time:</label><br>
+    <input type="time" name="classTime"><br><br>
+
+    <h3>Gender</h3>
+    <input type="radio" name="gender" value="male" required> Male<br>
+    <input type="radio" name="gender" value="Female"> Female<br>
+    <input type="radio" name="gender" value="other"> Other<br><br>
+
+    <h3>Course Interested</h3>
+    <input type="checkbox" name="course" value="jfs"> Java Full Stack Development<br>
+    <input type="checkbox" name="course" value="py"> Python Full Stack Development<br>
+    <input type="checkbox" name="course" value="fd"> Frontend Development<br>
+    <input type="checkbox" name="course" value="wdb"> Web Design Basics<br><br>
+
+    <h3>Learning Mode</h3>
+    <input type="radio" name="mode"> Online<br>
+    <input type="radio" name="mode"> Offline<br><br>
+
+    <h3>Interest Level</h3>
+    <label>Select your interest level:</label><br>
+    <input type="range" name="interestLevel"><br><br>
+
+    <h3>Upload Documents</h3>
+    <label>Upload ID Proof:</label><br>
+    <input type="file" name="idProof"><br><br>
+
+    <label>Upload Previous Certificate:</label><br>
+    <input type="file" name="certificate"><br><br>
+    <label>Read them carefully</label>
+ <input type="checkbox" name="course" value="jfs" required>Privacy Policy<br>
+    <input type="checkbox" name="course" value="py" required> Terms and condition<br>
+      <label> ID </label><br>
+    <input type="text"  required disabled>
+    <h3>Form Buttons</h3>
+    <input type="submit" value="Submit" disabled>
+    <input type="reset" value="clear form">
+    <input type="button" value="click me">
+    <!-- exmaple -->
+     <!-- <input type="text" value="India" disbaled> -->
+
+  </form>
+
+  <h2>Important Notes</h2>
+  <dl>
+    <dt>Response Time</dt>
+    <dd>Our team will contact you within 2 working days.</dd>
+
+    <dt>Certificate</dt>
+    <dd>Certificate will be provided after course and project completion.</dd>
+
+    <dt>Practice</dt>
+    <dd>Students must complete assignments and mini projects.</dd>
+  </dl>
+
+  <h2>Useful Links</h2>
+  <ul>
+    <li><a href="courses.html" title="View courses">View Courses</a></li>
+    <li><a href="mailto:smartacademy@example.com" title="Send email">Send Email</a></li>
+    <li><a href="tel:9876543210" title="Call academy">Call Academy</a></li>
+    <li><a href="#top" title="Go to top">Back to Top</a></li>
+  </ul>
+
+  <p>
+    Thank you for choosing Dreambyte Solutions. After submitting the form, please wait
+    for our confirmation call or email.
+  </p>
+
+  <p>━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</p>
+
+</body>
+</html>
