@@ -1299,9 +1299,21 @@ pattern validation error
 Correct format:
 accepted
 
-
-
-
+--------------------------------------------------------------------
+Autofocus :
+--------------
+<input type="text" autofocus>
+Multiple:
+----------------------
+<input type="file" multiple>
+Checked:
+-----------------------
+checked:
+-----------
+<input type="radio" value="blood" checked>
+size:
+--------------
+<input type="text" size="20">
 
 
 

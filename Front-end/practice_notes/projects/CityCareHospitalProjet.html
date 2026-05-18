@@ -25,6 +25,8 @@
       minlength="3"
       maxlength="30"
       required
+      autofocus
+      size="40"
     ><br><br>
 
     <label>Username:</label><br>
@@ -36,6 +38,7 @@
       maxlength="15"
       pattern="[A-Za-z0-9]+"
       required
+      size="40"
     ><br><br>
 
     <label>Email Address:</label><br>
@@ -44,6 +47,8 @@
       name="email"
       placeholder="example@gmail.com"
       required
+      multiple
+      size="40"
     ><br><br>
 
     <label>Password:</label><br>
@@ -54,6 +59,7 @@
       minlength="8"
       maxlength="16"
       required
+      size="40"
     ><br><br>
 
     <label>Phone Number:</label><br>
@@ -64,6 +70,7 @@
       pattern="[0-9]{10}"
       maxlength="10"
       required
+      size="40"
     ><br><br>
 
     <label>Age:</label><br>
@@ -91,6 +98,7 @@
       min="50"
       max="250"
       step="1"
+      size="30"
     ><br><br>
 
     <h2>Gender</h2>
@@ -155,15 +163,15 @@
 
     <h2>Department Selection</h2>
 
-    <input type="radio" name="department" value="general" required> General Medicine<br>
-    <input type="radio" name="department" value="cardiology"> Cardiology<br>
+    <input type="radio" name="department" value="general" required checked> General Medicine<br>
+    <input type="radio" name="department" value="cardiology" checked> Cardiology<br>
     <input type="radio" name="department" value="orthopedic"> Orthopedic<br>
-    <input type="radio" name="department" value="neurology"> Neurology<br><br>
+    <input type="radio" name="department" value="neurology" checked> Neurology<br><br>
 
     <h2>Services Required</h2>
 
-    <input type="checkbox" name="service" value="consultation"> Doctor Consultation<br>
-    <input type="checkbox" name="service" value="bloodTest"> Blood Test<br>
+    <input type="checkbox" name="service" value="consultation" checked> Doctor Consultation<br>
+    <input type="checkbox" name="service" value="bloodTest" checked> Blood Test<br>
     <input type="checkbox" name="service" value="scan"> Scan / X-Ray<br>
     <input type="checkbox" name="service" value="pharmacy"> Pharmacy Support<br><br>
 
@@ -173,6 +181,7 @@
     <input 
       type="file"
       name="idProof"
+      multiple
     ><br><br>
 
     <label>Upload Medical Report:</label><br>
@@ -206,6 +215,7 @@
       name="terms"
       value="accepted"
       required
+      checked
     > I agree to the hospital appointment terms and conditions.<br><br>
 
     <h2>Form Buttons</h2>
