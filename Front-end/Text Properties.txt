@@ -1,0 +1,190 @@
+Text Properties:
+---------------------
+<h1>Vishnu Vardhan</h1>
+<p>hi</p>
+
+1. text-align :
+---------------
+<h1>Welcome</h1>
+The text-align property controls the horizontal alignment of text inside an element.
+syntax:
+-----------
+selector{
+text-align:value;
+}
+values:
+-------------
+1.left
+2.center
+3.right
+4.justify
+5.start -> align according to language direction
+6.end -> opposite of start.
+
+2. text-decoration:
+--------------------
+Used to add or remove decorative lines from text.
+syntax:
+--------
+text-decoration:value;
+
+values:
+-----
+underline
+overline
+line-through
+none
+
+3. text-decoration-color:
+---------------------
+changes the decorative lines color
+syntax:
+--------
+text-decoration:underline
+text-decoration-color:red;
+
+4. text-decoration-style:
+------------------------
+not every line should look identical.
+syntax:
+---------
+text-decoration-style:value;
+
+values:
+-----------
+solid
+dotted
+dashed
+double
+wavy
+
+5. text-decoration-thickness
+----------------
+sometimes underline appears too thin. Then we need thickness control.
+syntax:
+--------------
+text-decoration-thickness:value;
+
+6. text-transform:
+-------------
+dreambyte solutions
+DREAMBYTE SOLUTIONS
+without manually changing text.
+
+This property helps us to change the capitalization of text.
+
+Syntax:
+------------
+text-transform:value;
+
+Values:
+----------
+uppercase;
+lowercase;
+capitalize;
+none;
+
+7. letter-spacing:
+------------
+WELCOME
+W E L C O M E 
+Controls spacing between the letters.
+
+Syntax:
+--------
+letter-spacing:value;
+
+8. word-spacing:
+-------------
+learn practice build grow
+Learn  Practice  Build  Grow
+Controls spacing between the words
+Syntax:
+--------
+word-spacing:value;
+
+9. line-height:
+--------------
+without spacing
+Line 1
+
+Line 2
+
+Line 3
+Syntax:
+---------
+line-height:value;
+
+10. text-indent:
+------------
+      once upon a time ....
+Adds indentation to the first line.
+ Syntax:
+--------
+text-indent:value:
+
+11. text-shadow:
+---------
+Adds shadow behind the text.
+
+Syntax:
+------------
+text-shadow: x y blur color;
+
+12. white-space:
+-----------------
+Browsers normally remove extra spaces.
+Syntax:
+--------
+white-space:value;
+
+Values:
+-------
+normal -> default
+nowrap ->prevents line break.
+pre  -> preserves spaces exactly.
+
+13. text-overflow:
+-------------
+Long text may not fit inside containers.
+Syntax:
+--------
+text-overflow: value;
+
+Values:
+----------
+clip -> cuts text.
+ellipsis -> makes text ......
+
+14. overflow-wrap:
+------------------
+dreambytesolutionslearningplatform
+Syntax:
+------------
+overflow-wrap:break-word;
+
+15. word-break
+-------------------
+Need more aggressive word breaking
+
+SyntaX:
+--------
+word-break:break-all;
+Allows breaking anywhere.
+
+16. direction:
+------------------
+Not all languages are left-to-right
+eg:
+----
+English -> Left to Right
+Arabic -> Right to Left
+Values:
+-------------
+direction:ltr;
+direction:rtl;
+
+17. unicode-bidi
+-------------------
+used with direction
+Helps browsers disply mixed-language content correctly.

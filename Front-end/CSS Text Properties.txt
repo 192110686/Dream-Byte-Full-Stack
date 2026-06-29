@@ -1,0 +1,196 @@
+Module 5: CSS Text Properties
+-------------------------------------
+
+
+1. Text Align
+----------------
+Aligns text horizontally inside an element.
+Syntax:
+text-align:center;
+Example:
+p {
+    text-align:center;
+}
+Common Values / Note:
+left, right, center, justify
+
+2. Text Decoration
+------------------
+Adds or removes decorative lines.
+Syntax:
+text-decoration:underline;
+Example:
+p {
+    text-decoration:underline;
+}
+Common Values / Note:
+none, underline, overline, line-through
+
+3. Text Decoration Color
+--------------------------------
+Changes decoration color.
+Syntax:
+text-decoration-color:red;
+Example:
+p {
+    text-decoration-color:red;
+}
+Common Values / Note:
+Works with text-decoration
+
+4. Text Decoration Style
+----------------------------
+Changes line style.
+Syntax:
+text-decoration-style:dashed;
+Example:
+p {
+    text-decoration-style:dashed;
+}
+Common Values / Note:
+solid, double, dotted, dashed, wavy
+
+5. Text Decoration Thickness
+-----------------------------
+Changes line thickness.
+Syntax:
+text-decoration-thickness:3px;
+Example:
+p {
+    text-decoration-thickness:3px;
+}
+Common Values / Note:
+px or auto
+
+6. Text Transform
+--------------------------
+Changes letter case.
+Syntax:
+text-transform:uppercase;
+Example:
+p {
+    text-transform:uppercase;
+}
+Common Values / Note:
+uppercase, lowercase, capitalize, none
+
+7. Letter Spacing
+----------------------
+Controls spacing between letters.
+Syntax:
+letter-spacing:3px;
+Example:
+p {
+    letter-spacing:3px;
+}
+Common Values / Note:
+Increase/decrease letter spacing
+
+8. Word Spacing
+----------------------
+Controls spacing between words.
+Syntax:
+word-spacing:10px;
+Example:
+p {
+    word-spacing:10px;
+}
+Common Values / Note:
+Improves readability
+
+9. Line Height
+---------------------
+Controls spacing between lines.
+Syntax:
+line-height:30px;
+Example:
+p {
+    line-height:30px;
+}
+Common Values / Note:
+px or unitless
+
+10. Text Indent
+----------------------
+Indents first line.
+Syntax:
+text-indent:40px;
+Example:
+p {
+    text-indent:40px;
+}
+Common Values / Note:
+Used in articles
+
+11. Text Shadow
+-------------------
+Adds shadow to text.
+Syntax:
+text-shadow:2px 2px 5px gray;
+Example:
+p {
+    text-shadow:2px 2px 5px gray;
+}
+Common Values / Note:
+horizontal vertical blur color
+
+12. White Space
+----------------------
+Controls spaces and line breaks.
+Syntax:
+white-space:nowrap;
+Example:
+p {
+    white-space:nowrap;
+}
+Common Values / Note:
+normal, nowrap, pre, pre-wrap, pre-line
+
+13. Text Overflow
+-------------------
+Controls hidden overflow text.
+Syntax:
+text-overflow:ellipsis;
+Example:
+p {
+    text-overflow:ellipsis;
+}
+Common Values / Note:
+Use with overflow:hidden
+
+14. Overflow Wrap
+--------------------
+Breaks long words.
+Syntax:
+overflow-wrap:break-word;
+Example:
+p {
+    overflow-wrap:break-word;
+}
+Common Values / Note:
+Prevents overflow
+
+15. Word Break
+---------------------
+Controls word breaking.
+Syntax:
+word-break:break-all;
+Example:
+p {
+    word-break:break-all;
+}
+Common Values / Note:
+normal, break-all, keep-all
+
+16. Unicode Bidi
+--------------------
+Controls bidirectional text.
+Syntax:
+unicode-bidi:bidi-override;
+Example:
+p {
+    unicode-bidi:bidi-override;
+}
+Common Values / Note:
+Used with direction
+

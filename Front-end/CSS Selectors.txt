@@ -1,0 +1,589 @@
+ Module 4: CSS Selectors
+------------------------------
+ 1. What are CSS Selectors?
+----------------------------------
+CSS Selectors are used to select one or more HTML elements on which we want to apply CSS styles.
+
+Selectors help the browser identify which HTML element should receive the specified CSS properties.
+
+Without selectors, CSS cannot determine where the styles should be applied.
+
+ Syntax:
+
+selector{
+property:value;
+}
+
+ Example:
+
+h1{
+color:red;
+}
+
+Here,
+
+h1 -> Selector
+
+color -> Property
+
+red -> Value
+
+ Note:
+
+Selectors are one of the most important concepts in CSS because every CSS rule begins with a selector.
+
+---
+
+ 2. Element Selector
+----------------------------
+The Element Selector selects HTML elements based on their tag name.
+
+It applies the same style to every HTML element of that particular type.
+
+ Syntax:
+
+element_name{
+property:value;
+}
+
+Example:
+
+ HTML
+
+<h1>HTML</h1>
+
+<h1>CSS</h1>
+
+<h1>JavaScript</h1>
+
+ CSS
+
+h1{
+color:blue;
+}
+
+ Output:
+
+All the h1 headings become blue.
+
+Another Example:
+
+ HTML
+
+<p>Paragraph 1</p>
+
+<p>Paragraph 2</p>
+
+ CSS
+
+p{
+font-size:20px;
+}
+
+ Output:
+
+Both paragraphs become 20px.
+
+ Advantages:
+
+-> Easy to understand.
+
+-> Styles multiple similar elements at once.
+
+ Disadvantages:
+
+-> Cannot target a specific element.
+
+---
+
+ 3. ID Selector
+------------------------
+The ID Selector is used to style a single unique HTML element.
+
+Each ID should be unique within a webpage.
+
+The ID Selector is represented using the '#' symbol.
+
+ Syntax:
+
+ HTML
+
+<h1 id="title">Welcome</h1>
+
+ CSS
+
+title{
+color:red;
+}
+
+Example:
+
+ HTML
+
+<h1 id="heading1">HTML</h1>
+
+<h1 id="heading2">CSS</h1>
+
+ CSS
+
+heading1{
+color:red;
+}
+
+heading2{
+color:blue;
+}
+
+ Output:
+
+The first heading becomes red.
+
+The second heading becomes blue.
+
+ Important Points:
+
+-> Every ID should be unique.
+
+-> One element should have only one ID.
+
+-> IDs should not be reused.
+
+ Advantages:
+
+-> Best for styling unique elements.
+
+-> Has higher priority than Class Selector.
+
+ Disadvantages:
+
+-> Cannot be reused.
+
+---
+
+ 4. Class Selector
+-------------------------
+The Class Selector is used to apply the same style to multiple HTML elements.
+
+A class can be used any number of times.
+
+The Class Selector is represented using the '.' symbol.
+
+ Syntax:
+
+ HTML
+
+<p class="info">HTML</p>
+
+<p class="info">CSS</p>
+
+ CSS
+
+.info{
+color:green;
+}
+
+Example:
+
+ HTML
+
+<h1 class="heading">HTML</h1>
+
+<p class="heading">CSS</p>
+
+<div class="heading">JavaScript</div>
+
+ CSS
+
+.heading{
+color:blue;
+}
+
+ Output:
+
+All three elements become blue.
+
+ Multiple Classes:
+
+ HTML
+
+<p class="red bold">
+Welcome Students
+</p>
+
+ CSS
+
+.red{
+color:red;
+}
+
+.bold{
+font-weight:bold;
+}
+
+ Output:
+
+The paragraph becomes both red and bold.
+
+ Important Points:
+
+-> Classes are reusable.
+
+-> Multiple elements can have the same class.
+
+-> One element can contain multiple classes.
+
+ Advantages:
+
+-> Reusable.
+
+-> Mostly used in real-world projects.
+
+---
+
+ 5. Universal Selector
+-------------------------------
+The Universal Selector selects every HTML element present in the webpage.
+
+It is represented using the '*' symbol.
+
+ Syntax:
+
+*{
+property:value;
+}
+
+ Example:
+
+*{
+color:blue;
+}
+
+ Output:
+
+All text in the webpage becomes blue.
+
+ Another Example:
+
+*{
+font-family:Arial;
+}
+
+ Output:
+
+Every element uses the Arial font.
+
+ Advantages:
+
+-> Applies common styles to the entire webpage.
+
+-> Commonly used for browser reset styles.
+
+ Disadvantages:
+
+-> Applies to every element.
+
+-> Should be used carefully.
+
+---
+
+ 6. Group Selector
+-------------------------
+The Group Selector is used to apply the same style to multiple selectors.
+
+Instead of writing separate CSS rules, selectors are separated using commas.
+
+ Syntax:
+
+selector1,
+selector2,
+selector3{
+property:value;
+}
+
+ Example:
+
+h1,p{
+color:red;
+}
+
+ Output:
+
+All h1 and p elements become red.
+
+ Another Example:
+
+h1,h2,h3{
+text-align:center;
+}
+
+ Output:
+
+All headings become center aligned.
+
+ Advantages:
+
+-> Reduces duplicate code.
+
+-> Improves readability.
+
+-> Easier maintenance.
+
+---
+
+ 7. Difference Between ID Selector and Class Selector
+--------------------------------------------------
+ Feature
+
+Symbol
+
+ ID Selector
+
+
+
+ Class Selector
+
+.
+
+---
+
+ Feature
+
+Reusable
+
+ ID Selector
+
+No
+
+ Class Selector
+
+Yes
+
+---
+
+Feature
+
+Number of Elements
+
+ ID Selector
+
+One
+
+ Class Selector
+
+Multiple
+
+---
+
+ Feature
+
+Must be Unique
+
+ ID Selector
+
+Yes
+
+ Class Selector
+
+No
+
+---
+
+ Feature
+----------------
+Mostly Used For
+
+ID Selector
+
+Unique Elements
+
+Class Selector
+
+Common Styling
+
+---
+
+8. CSS Selector Priority (Specificity)
+-----------------------------------------
+Sometimes multiple selectors try to apply different styles to the same HTML element.
+
+In such situations, CSS follows a priority system called Specificity.
+
+The selector with higher specificity gets applied.
+
+Priority Order:
+----------------------------
+1. Inline CSS (Highest Priority)
+
+ Example:
+
+<h1 style="color:red;">Welcome</h1>
+
+---
+
+2. ID Selector
+
+Example:
+
+title{
+color:blue;
+}
+
+---
+
+3. Class Selector
+
+ Example:
+
+.heading{
+color:green;
+}
+
+---
+
+4. Element Selector
+
+ Example:
+
+h1{
+color:orange;
+}
+
+---
+
+5. Universal Selector (Lowest Priority)
+---------------------------------
+Example:
+
+*{
+color:black;
+}
+
+---
+
+Example:
+
+HTML
+
+<h1 id="title" class="heading">
+Welcome Students
+</h1>
+
+CSS
+
+*{
+color:black;
+}
+
+h1{
+color:orange;
+}
+
+.heading{
+color:green;
+}
+
+title{
+color:blue;
+}
+
+ Output:
+
+The heading becomes Blue because the ID Selector has higher priority.
+
+---
+
+Another Example:
+
+ HTML
+
+<p class="info">
+CSS Learning
+</p>
+
+ CSS
+
+p{
+color:red;
+}
+
+.info{
+color:blue;
+}
+
+Output:
+-------------
+The paragraph becomes Blue because the Class Selector has higher priority than the Element Selector.
+
+---
+
+9. Important Notes
+-----------------------
+
+-> Inline CSS has the highest priority.
+
+-> ID Selector has higher priority than Class Selector.
+
+-> Class Selector has higher priority than Element Selector.
+
+-> Element Selector has higher priority than Universal Selector.
+
+-> Universal Selector has the lowest priority.
+
+-> If two selectors have the same priority, the selector written last will be applied.
+
+ Example:
+
+h1{
+color:red;
+}
+
+h1{
+color:blue;
+}
+
+Output:
+
+The heading becomes Blue because the last rule overrides the previous rule.
+
+---
+
+10. Best Practices
+----------------------------
+
+-> Use Class Selectors whenever possible.
+
+-> Use ID Selectors only for unique elements.
+
+-> Avoid excessive use of Inline CSS.
+
+-> Use meaningful class and ID names.
+
+-> Group similar selectors whenever possible to reduce code duplication.
+
+---
+
+Key Points to Remember
+-------------------------------------
+
+-> CSS Selectors are used to select HTML elements for styling.
+
+-> Element Selector selects elements by tag name.
+
+-> ID Selector selects one unique element.
+
+-> Class Selector selects multiple elements.
+
+-> Universal Selector selects every element.
+
+-> Group Selector applies the same style to multiple selectors.
+
+-> Class Selectors are preferred in real-world projects because they are reusable.
+
+-> ID Selectors should be used only for unique elements.
+
+-> CSS follows Specificity (Priority) when multiple selectors target the same element.
+
+-> Priority Order:
+--------------------------
+
+Inline CSS > ID Selector > Class Selector > Element Selector > Universal Selector.

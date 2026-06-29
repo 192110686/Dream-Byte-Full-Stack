@@ -1316,6 +1316,181 @@ size:
 <input type="text" size="20">
 
 
+TextArea Attributes:
+----------------------------
+<textarea> is an HTML form element used to collect multi-line text input from users.
+
+syntax:
+-----------
+<textarea></textarea>
+
+
+eg:
+<label>Address:</label>
+<textarea></textarea>
+
+difference between input and textarea:
+-------------------------------------
+input              textarea
+yes                  mainly multi-line ->single line
+no                   yes ->multiple lines
+difficult             easy ->large text
+no                    yes->closing tag needed
+
+Important Attributes:
+-------------------------
+->rows
+->cols
+->maxength
+->placeholder
+
+HTML row attribute:
+---------------------
+
+
+Select Tag Attributes:
+------------------------
+<select> tag works together with <option> tag
+syntax:
+-----------
+<select>
+<option>India</option>
+<option>USA</option>
+</select>
+
+<option>:
+-------------------
+it defines the each selectable item inside the dropdown.
+
+<select> =container
+<option> =choices/items
+
+Main Attributes:
+---------------------
+1.name
+2.multiple
+3.size
+4.required
+5.disabled
+1.name:
+--------------------
+
+<button> tag:
+-----------------
+<buttom> is an HTML element used to create clickable buttons for user actions.
+
+Syntax:
+---------------
+<button>Click Me</button>
+
+using <button>:
+---------------
+<button>Login</button>
+
+using input:
+--------------------
+<input type="submit" value="Login">
+
+<button>
+search
+</button>
+
+Important Attributes of Button:
+---------------------------------
+1.type
+2.disabled
+3.name
+4.value
+5.autofocus
+
+if not type is given inside a form: default type is submit 
+
+type="submit"
+-------------
+submits form data to the server
+<button type="submit" > Submit </button>
+
+type="reset"
+---------------
+resets all form fields to default values.
+<button type="reset">Reset</button>
+
+type="button"
+--------------------
+<button type="button">Click Me</button>
+
+2.disabled:
+-----------------
+disabled makes the button inactive.
+
+3.name:
+-------------
+name identifies the button during the form submission.
+<button name="action" value="save">Save<?button>
+
+action=save
+
+
+
+
+
+4.value:
+----------
+value stores the value submitted when the button is clicked.
+<button name="action" value="delete">Delete<?button>
+
+
+<button value="login">Sign In</button>
+<button value="logout" name="value" type="submit">GetOut</button>
+
+key=value
+   
+----------------------------------
+
+
+target Attribute
+
+<form target="_blank">
+
+-self=opens in same tab
+_blank = new tab
+_parent = parent frame
+_Top=full window 
+
+enctype Attribute:
+-------------------
+
+enctype decides how form data is packed and sent.
+
+syntax;
+-----------
+<form enctype="multipart/form-data">
+
+enctype values:
+--------------
+application/x-www-form-urlencoded ->default encoding
+multipart/form-data -> file uploads
+text/plain -> Plain text data
+
+dog is barking animal walking
+
+autocomplete:
+-------------------
+Browser remembers previous values and suggests them automaticalyy.
+syntax:
+------------
+<form autocomplete="on/off">
+
+
+novalidate:
+------------
+novalidate disables HTML form Validation. Browser will not check validations before form submissions
+
+<form novalidate>
+
+accept-charset :
+-----------------------
+<form accept-charset="UTF-8">
 
 
 

@@ -1,0 +1,81 @@
+Block vs Inline Elements:
+------------------------------
+Block Elements:
+--------------------
+A block element takes the entire available width and starts on a new line.
+eg:
+h1-h6
+p
+div
+section
+article
+header
+footer
+form
+
+Inline Elements:
+----------------------
+An inline element only tales the space it needs
+eg:
+span
+a
+img
+strong
+em
+mark
+text-formatting tags
+
+Div Tag:
+--------------
+<div> tag is a generic block-level container used to group HTML elements.
+<div>
+<h2>Student details</h2>
+<p>Name:Rahul</p>
+<p>Course: Java</p>
+</div>
+
+
+span Tag:
+---------
+sometimes we want to target only a small piece of text
+eg:
+Welcome Neha
+
+-> It is a generic inline container used to group small portions of content.
+<p>
+Welcome <span>Neha</span>
+<p>
+
+
+Meta Tags:
+-----------
+<head>
+   <meta charset="UTF-8">
+</head>
+Meta tag provides the information about the webpage.
+1. Character Set:
+--------------------
+<meta charset="UTF-8">
+Tells the browser how to display text and symbols.
+
+2. Viewport:
+----------------
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+makes the page responsive on mobile devices.3.
+
+3. Description:
+----------------------
+<meta name="description" content="Java Full Stack Training Institute">
+
+provides a summary of the webpage
+search engines may show this in search reults.
+
+4. Keywords:
+--------------
+<meta name ="keywords" content="Java, HTML, CSS, Spring Boot, React JS">
+Lists keywords related to the page.
+
+5. Author:
+----------------
+<meta name="author" content="DreamByte Solutions">
+specifies who created the webpage.

@@ -1,0 +1,466 @@
+<h1>Dreambyte solution</h1>
+1. Colour Property:
+------------------------
+The colour property is used to change the color of the text inside an element.
+
+syntax:
+------
+selector{
+color:value;
+}
+
+
+Ways to give color?
+-------------------
+Method 1: Color Names:
+--------------
+color:red;
+
+this is easy and beginner friendly
+
+Method 2:RGB
+---------------
+RGB means:
+R = Red
+G = Green
+B = Blue
+
+Each value ranges from 0 to 255
+
+eg:
+----        r     g     b
+color:rgb(0-255,0-255,0-255)
+
+if we want only green:
+-------------------
+color:rgb(0,255,0);
+
+for black color-> all 0
+for white color -> all 255
+
+mixed new color:
+---------------
+color:rgb(50,60,70);
+
+Method 3: Hexadecimal:
+-----------------------
+A hexadecimal color is another way of representing colors in CSS
+we can write:
+color:#FF0000;
+00->OFF MEANS 0->minimum color
+ff->Full power ->maximum color
+
+hexadecimal allows us to choose very precise colors.
+
+Hexadecimal Syntax:
+----------------------
+color: #RRGGBB
+#->this is a Hexadecimal color
+each color gets 2 positions
+
+Understanding Hexadecimal Values:
+---------------------------
+Hexadecimal uses
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+After 9 instead of:
+10 11 12 ....
+it uses
+A=10
+B=11
+C=12
+D=13
+E=14
+F=15
+
+eg:
+------
+color:#FFFF00
+#FFFFFF->white
+#000000->black
+
+
+Some Common Hex:
+----------------------
+
+color       HexCode
+-----      ----------
+Black      #000000
+White      #FFFFFF
+Red        #FF0000
+Green      #00FF00
+Blue       #0000FF
+Yellow     #FFFF00
+Purple     #800080
+Orange     #FFA500
+Pink       #FFC0CB
+
+rgb -> 0 -255
+HEXADECIMAL USES VALUES FROM 00-ff
+Hexadecimal is simple a shorter and more industry-standard way of writing RGB colors
+
+
+
+
+
+Module 3: Background Properties
+--------------------------------
+
+1. Background Properties
+-------------------------
+Background properties are used to control the background appearance of an HTML element. Using these properties, we can apply colors, images, image repetition, image size and image position to an element.
+
+The commonly used background properties are:
+1. background-color
+2. background-image
+3. background-repeat
+4. background-size
+5. background-position
+6. background (Shorthand)
+
+2. Background-color
+--------------------
+The background-color property is used to change the background color of an HTML element.
+
+Syntax:
+---------
+selector{
+    background-color: value;
+}
+
+Example:
+----------
+body{
+    background-color: lightblue;
+}
+
+h1{
+    background-color: yellow;
+}
+
+Note:
+---------
+color -> Changes the text color.
+
+background-color -> Changes the background color of an element.
+
+Common Values:
+----------------
+red
+blue
+green
+yellow
+black
+white
+pink
+orange
+lightgray
+
+3. Background-image
+---------------------
+The background-image property is used to place an image behind an HTML element.
+
+Syntax:
+---------
+selector{
+    background-image: url("image-name.jpg");
+}
+
+Example:
+----------
+body{
+    background-image: url("nature.jpg");
+}
+
+Important Points:
+-------------------
+-> The image is displayed behind the content.
+-> The image does not replace the HTML content.
+-> If the image cannot be loaded, only the background color (if provided) will be displayed.
+-> Always provide the correct image path.
+
+Types of Image Path:
+----------------------
+1. Relative Path
+-----------------
+background-image: url("images/bg.jpg");
+
+Used when the image is available inside the current project folder.
+
+2. Absolute Path
+-----------------
+background-image: url("https://example.com/bg.jpg");
+
+Used when the image is available online.
+
+
+
+
+4. Background-repeat
+----------------------
+The background-repeat property is used to control how a background image is repeated inside an HTML element.
+
+Syntax:
+
+selector{
+background-repeat: value;
+}
+
+Values:
+repeat
+
+Repeats the background image both horizontally and vertically.
+
+Example:
+
+background-repeat: repeat;
+
+no-repeat
+
+Displays the background image only once.
+
+Example:
+
+background-repeat: no-repeat;
+
+repeat-x
+
+Repeats the background image only horizontally (left to right).
+
+Example:
+
+background-repeat: repeat-x;
+
+repeat-y
+
+Repeats the background image only vertically (top to bottom).
+
+Example:
+
+background-repeat: repeat-y;
+
+Complete Example:
+
+body{
+background-image: url("flower.jpg");
+background-repeat: no-repeat;
+}
+
+Note:
+
+repeat -> Horizontal and Vertical
+
+repeat-x -> Horizontal only
+
+repeat-y -> Vertical only
+
+no-repeat -> Image appears only once
+
+5. Background-size
+---------------------------
+The background-size property is used to control the size of the background image.
+
+Syntax:
+
+selector{
+background-size: value;
+}
+
+Values:
+cover
+
+Makes the background image cover the entire element.
+
+The image may be cropped to completely fill the available space.
+
+Example:
+
+background-size: cover;
+
+contain
+
+Resizes the image so that the complete image is visible without cropping.
+
+Some empty space may remain around the image.
+
+Example:
+
+background-size: contain;
+
+Pixel Values
+
+Used to specify a custom width and height for the background image.
+
+Example:
+
+background-size: 300px 200px;
+
+or
+
+background-size: 500px;
+
+Complete Example:
+
+body{
+background-image: url("nature.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+Note:
+
+cover -> Fills the entire element (Image may be cropped)
+
+contain -> Displays the complete image (No cropping)
+
+pixels -> Used to set a custom width and height
+
+6. Background-position
+----------------------------
+The background-position property is used to specify the starting position of the background image inside an element.
+
+Syntax:
+
+selector{
+background-position: value;
+}
+
+Common Values:
+left
+
+Places the background image on the left side of the element.
+
+Example:
+
+background-position: left;
+
+right
+
+Places the background image on the right side of the element.
+
+Example:
+
+background-position: right;
+
+top
+
+Places the background image at the top of the element.
+
+Example:
+
+background-position: top;
+
+bottom
+
+Places the background image at the bottom of the element.
+
+Example:
+
+background-position: bottom;
+
+center
+
+Places the background image at the center of the element.
+
+Example:
+
+background-position: center;
+
+Combined Values:
+
+background-position: top left;
+
+background-position: top right;
+
+background-position: bottom left;
+
+background-position: bottom right;
+
+background-position: center center;
+
+Pixel Values:
+
+We can also specify the position using custom pixel values.
+
+Example:
+
+background-position: 100px 50px;
+
+This moves the image:
+-> 100px from the left.
+-> 50px from the top.
+
+Complete Example:
+
+body{
+background-image: url("nature.jpg");
+background-repeat: no-repeat;
+background-position: center;
+}
+
+Note:
+
+background-position controls where the image is placed inside the element.
+
+Background (Shorthand Property)
+
+The background property is a shorthand property used to combine multiple background properties into a single line.
+
+Instead of writing each property separately, we can write them together using the background property.
+
+Syntax:
+
+selector{
+background: color image repeat position;
+}
+
+Example:
+
+body{
+background: lightblue url("nature.jpg") no-repeat center;
+}
+
+Another Example:
+
+body{
+background: yellow url("flower.jpg") repeat-x top;
+}
+
+Advantages:
+
+-> Reduces the amount of CSS code.
+
+-> Makes the code cleaner and easier to read.
+
+-> Improves code maintainability.
+
+Note:
+
+The shorthand property can combine:
+
+-> background-color
+
+-> background-image
+
+-> background-repeat
+
+-> background-position
+
+-> background-size (using '/' syntax)
+
+Example:
+
+background: lightblue url("nature.jpg") no-repeat center/cover;
+
+Key Points to Remember
+
+-> background-color changes the background color.
+
+-> background-image adds an image to the background.
+
+-> background-repeat controls how the image repeats.
+
+-> background-size controls the size of the image.
+
+-> background-position controls where the image is displayed.
+
+-> background is the shorthand property used to combine multiple background properties into a single declaration.

@@ -1,0 +1,133 @@
+Semantic Tags:
+-----------------
+Semantic tags are the HTML tags that clearly describe the meaning and purpose of the content.
+->Semantic tags tell browsers and developers what the content represents.
+
+Why do we use semantic tags:
+---------------------------
+1. Improves the code readability
+2. improve SEO
+3. improve accessibility
+4. Organize webpage structure
+5.Help screen readers understand the content
+
+Semantic tags gives the meaning to the webpage sections
+Basic Semantic Structure:
+-----------------------------
+<header></header>
+<nav></nav>
+<main>
+<section>
+<article></article>
+</section>
+<aside></aside>
+</main>
+<footer></footer>
+
+
+<header>:
+--------------------
+<section>
+-----------------------
+used to divide content into meaningful sections
+eg:
+<section>
+<h2>About us</h2>
+<p>bkcb</p>
+</section>
+section groups related content together
+
+<article>:
+---------------
+article contains content that can stand alone independently.
+eg:
+---
+blog post
+news article
+forum post
+product review
+eg:
+---
+<article>
+<h1></h1>
+<p></p>
+</article>
+
+<aside>:
+---------------------
+Aside contains extra information related to the main contanet.
+aside is not main content
+it is supporting content.
+eg:
+<aside>
+<aside>
+
+
+<footer>
+----------------
+Represents the bottom section of teh webpage
+
+footer contains the ending information.
+eg:
+----
+<footer>
+</footer>
+
+
+<figure>
+---------------------
+
+represents the self-contained media content
+used for
+images
+diagrams
+videos
+charts/illustrations
+eg:
+<figure>
+<img src="nature.jpg">
+</figure>
+
+<figcaption>
+---------------------------
+provides the caption/description for figure
+eg:
+-----------
+<figure>
+<img src="nature.jpg">
+<figcaption>Beautiful nature</figcaption>
+</figure>
+
+<details>:
+--------------
+user can open and close hidden content
+<details>hidden content here</details>
+
+<summary>:
+------------------
+defines the visible heading/title for details
+<details>
+<summary>Read More</summary>
+HTML helps build the webpages.</details>
+
+<time>:
+-------------
+Represents date or time information:
+<time datetimme="2026-05-28">May 25, 2026</time>
+eg:
+-----
+
+<mark>:
+-------------
+HTML is <mark> very Important</mark>
+
+
+
+
+
+
+
+
+
+
+

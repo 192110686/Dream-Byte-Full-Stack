@@ -1,0 +1,112 @@
+Font Properties:
+--------------------
+Typography:
+---------------
+Typography is the art of arranging and styling text to make it:
+->Readable
+->Attractive
+->Professional
+
+What is a font?
+---------------------
+<h1>Welcome</h1>
+A font is the design or appearance of letters, numbers, and symbols.
+eg:
+----------
+HELLO
+may appear in many different styles
+Each style is a different font 
+
+Font Categories:
+---------------------
+1. Serif Fonts:
+----------------
+Serif fonts contain small decorative edges
+we can notice tiny finishing strokes.
+
+eg:
+------
+Times New Roman
+Georgia
+Garamond
+
+2. Sans-Serif Fonts:
+-----------------------
+Sans -> French word -> Without
+sans-serif -> without decorative edges
+
+eg:
+---
+Arial
+Vardana
+Helvetica
+
+3. Monospace Fonts:
+-------------------
+In Monospace fonts each letter occupies the same width
+Eg:
+---
+Consolas
+Monaco
+Courier New
+
+4. Cursive Fonts:
+-------------------
+Looks like handwriting
+
+eg:
+----
+cursive
+
+5. Fantasy Fonts:
+---------------
+decorative fonts designed for special effects
+eg:
+-----
+font-family:fantasy;
+
+Property:
+------------
+font-family:
+--------------
+The font-family property is used to specify which font should be used.
+syntax:
+-----------
+font-family:value;
+
+2. font-size:
+-------------------
+ controls the size of the text
+
+Syntax:
+-----------
+font-size:value;
+Values:
+---------
+1. Unit -> px
+Pixels are the tiny dots on the screen
+eg: font-size:20px;
+
+2. Unit -> %
+Sometimes size should depend on parent element
+
+3. Unit -> em
+Relative sizing
+eg: font-size:2em;
+ means-> 2 times parent size
+
+4. Unit -> rem
+Based on root element(html)
+if root size-> 16px
+then font-size : 2rem;
+2*16=32px;
+
+5. Unit -> vw:
+Viewport Width.
+Responsive Unit 
+eg: font-size:5vw;
+
+6. Unit -> vh:
+Viewport Height
+
+ 

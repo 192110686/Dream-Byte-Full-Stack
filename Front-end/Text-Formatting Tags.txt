@@ -1,0 +1,80 @@
+Text-Formatting Tags:
+---------------------------
+Basic Formatting:
+------------
+<b>
+<strong>
+<i>
+<em>
+<u>
+<mark>
+
+Document Editing tags:
+-----------------------
+<del>
+<ins>
+<small>
+
+Technical Tags:
+--------------------
+<sup>
+<sub>
+
+Quotation Tags:
+--------------------
+<q>
+<blockquote>
+<abbr>
+
+Coding Related Tags:
+---------------------
+<code>
+<pre>
+<kdb>
+
+Text formatting tags are used to changes the appearance or meaning of the text
+Two types of Formatting tags:
+-----------------------------
+Physical formatting -> changes appearance
+Semantic formatting -> Adds meaning/importance
+<b> Bold Text</b>
+<strong>Important Text</strong>
+
+
+1.<b> - Bold Tag:
+-----------------
+makes the text bold
+<b> Welcome Students</b>
+
+2.<strong> -> Important Text:
+------------------------
+<strong> marks text as important
+<strong>Price Deals</strong?
+
+3.<i> -> italic Tag:
+----------------------------
+<em>-emphasized
+<u>
+<mark>-highlight tag
+<small>-small text
+<del>-deleted text
+price:<del>2000</del>
+New Price:<ins>700</ins>
+<ins>-inserted Text
+<sup>-superscript
+x<sup>2</sup>
+<sub>-subscript
+H<sub>2</sub>O
+<q>-Inline Quotation:</q>
+--------------------
+<blockquote>-Large Quotation
+<code>System.out.println("Hello");</code>
+<pre>Preformatted Text</pre>
+<pre>
+Hello
+       Students
+</pre>
+<abbr>-Abbreviation
+<abbr title="Hyper Text MarkUp Language">
+HTML
+</abbr>

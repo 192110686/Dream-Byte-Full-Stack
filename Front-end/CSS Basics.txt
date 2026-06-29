@@ -1,0 +1,156 @@
+Module 1: CSS Basics
+---------------------
+1. What is CSS?
+----------------------------
+CSS (Cascading Style Sheets) is a stylesheet language used to control the appearance and layout of HTML elements. It allows us to add colors, fonts, spacing, alignment, animations, and many other visual effects to a webpage.
+
+Example
+
+Without CSS:
+----------------------
+<h1>Welcome Students</h1>
+
+Output: A simple heading with default browser styling.
+
+With CSS:
+---------------
+h1{
+    color: blue;
+    text-align: center;
+}
+
+Output: A blue, center-aligned heading.
+
+2. Why Do We Need CSS?
+----------------------------------
+HTML is used to create the structure of a webpage, but it cannot create an attractive design. CSS is used to improve the look and feel of the webpage.
+
+Benefits of CSS
+-----------------------
+Improves website appearance.
+Separates design from HTML content.
+Makes code easier to maintain.
+Allows the same style to be applied across multiple pages.
+Supports responsive web design.
+
+3. CSS Syntax
+------------------------
+Syntax
+selector{
+    property: value;
+}
+
+Example
+
+h1{
+    color: red;
+}
+
+Parts of CSS
+------------------
+Selector → Selects the HTML element to style.
+Property → Specifies what style to apply.
+Value → Specifies the style value.
+
+4. Types of CSS
+--------------------
+CSS can be added to HTML in three ways:
+
+1. Inline CSS
+---------------------
+CSS is written inside the style attribute of an HTML element.
+
+Syntax
+
+<h1 style="color:red;">Welcome</h1>
+
+Advantages
+-------------------------
+Easy for small changes.
+Quick to implement.
+
+Disadvantages
+--------------------------
+Not reusable.
+Difficult to maintain.
+
+2. Internal CSS
+-----------------------
+CSS is written inside the <style> tag within the <head> section.
+
+Syntax
+
+<head>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+
+Advantages
+-----------------
+Styles the entire page.
+Easier to manage than inline CSS.
+
+Disadvantages
+----------------------
+Styles are limited to one webpage.
+
+3. External CSS
+-----------------------------
+CSS is written in a separate .css file and linked to the HTML page.
+
+HTML
+
+<link rel="stylesheet" href="style.css">
+
+style.css
+
+h1{
+    color: green;
+}
+
+Advantages
+----------------------
+Reusable across multiple pages.
+Easy to maintain.
+Preferred in real-world projects.
+
+Disadvantages
+-------------------------
+Requires a separate CSS file.
+
+5. Difference Between CSS Types
+
+Feature	        Inline  	     Internal    	 External
+---------------------------------------------------------------------------------
+Location	Inside HTML tag	   <style> tag  	Separate .css file
+Reusable	 No	           One page only	 Yes
+Maintenance	Difficult	    Moderate    	Easy
+Preferred	Small changes	Single-page websites	Real-world projects
+
+6. Best Practice
+-------------------------
+For professional web development, External CSS is the preferred approach because it keeps HTML and CSS separate, improves code readability, and makes maintenance easier.
+
+
+Key Points to Remember
+------------------------------
+CSS stands for Cascading Style Sheets.
+HTML creates the structure, CSS creates the design.
+CSS syntax consists of Selector, Property, and Value.
+There are three types of CSS: Inline, Internal, and External.
+External CSS is the industry-standard approach.
+
+
+
+Priority of CSS:
+----------------
+Inline CSS
+  |
+Internal CSS
+  |
+External CSS
+  |
+Browser Default
