@@ -109,4 +109,117 @@ eg: font-size:5vw;
 6. Unit -> vh:
 Viewport Height
 
+3.font-weight:
+---------------
+Controls how thick or thin text appears
+Values:
+-------------
+normal
+bold
+numeric values
+
+4. font-style:
+-----------------
+Controls whether text appears normal or slanted.
+values:
+------------
+normal
+italic
+oblique
+
+5. font-variant:
+-------------------
+it displays the text in special capital-letter style.
+eg: real usage:
+-------------
+certificates
+headings
+logos
+
+6. font-stretch:
+--------------
+controls the width of characters
+
+values:
+-----------
+condensed
+expanded
+
+7. line-height:
+--------------------
+controls the space between the lines
+we do that using the pixel values
+
+8. font(Shorthand property):
+-------------------------------------------
+Instead of writing:
+font-style,
+font-weight,
+font-size,
+font-family
+we can everything in one line.
+
+Syntax:
+-----------
+font:italic bold 5px Arial;
+
+9. font-size-adjust:
+--------------------
+font-size-adjust helps maintain readability when fonts change.
+
+10.font-kerning:
+-------------------
+Sometimes letters look too close together. Kerning improves appearance.
+
+Syntax:
+---------
+fnt-kerning:normal;
+auto;
+none;
+
+font-feature-settings:
+--------------------
+modern fonts contain special features 
+for example:
+------------
+->special number styles
+->small capitals
+->decorative characters
+syntax:
+---------
+font-feature-settings:"smcp";
+
+12. font-optical-sizing:
+--------------
+some modern fonts automatically adjust their appearance based on size.
+syntax:
+---------
+font-optical-sizing:auto;
+none
+
+13. font-synthesis:
+------------------
+suppose a font does not contain a bold version.
+browser may artificially create one.
+values:
+---------
+none
+weight
+style
+small-caps
+
+14. font-language-override:
+----------------------
+used for language-specific font behavior.
+eg:
+font-language-override:"ENG";
+
+
+
+
+
+
+
+
+
  
