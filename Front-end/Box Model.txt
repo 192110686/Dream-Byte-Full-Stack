@@ -1,0 +1,90 @@
+Box Model:
+-------------
+content= chocolate
+padding = wrapper
+border = outer cover
+margin = space between chocolates in the packet
+
+Box Model:
+------------
+if i create a <div> in HTML, is it just text or is it something else?
+ HTML Element= Box
+<div><div>Hello</div></div>
+<p>Paragraph</p>
+<h1>Heading</h1>
+<button>Click me</button>
+<img src="photos\image.png">
+
+what is a Box Model:
+------------------
+The CSS bOX model is the structure that every HTML element follows. It consists of four layers: Content, Padding, Border and Margin
+ 
+Part 1 : Content:
+------------------
+What is the purpose of <p> tag?
+<p>Hello Students</p>
+
+Content is the actual information inside an element.
+It can be:
+->Text
+->Image
+->Video
+->Icons
+->Forms
+->Button
+->Another div
+
+Part 2: Padding:
+-----------------
+Padding is the space between the content and the border.
+Syntax:
+-------
+padding:20px;
+what does that 20px mean?
+-> that means add 20 px of space on all the four sides.
+          20px
+           |
+20px ->   content  <-20px
+
+           |
+          20px
+
+
+Padding properties:
+--------------------
+sometimes you want more space only at the top.
+padding-top:20px;
+->padding-bottom:50px;
+->padding-left:30px;
+padding-right:40px;
+
+padding shorthand:
+---------------
+one value:
+------------
+padding:30px;
+means
+top=30px;
+bottom=30px;
+left=30px;
+right=30px;
+
+two values:
+------------
+padding: 20px 30px;
+     20
+30        30
+     20
+->first value -> top & bottom
+->second value -> left & right
+
+three values:
+----------
+padding: 10px 20px 30px;
+top -> 10
+left & right -> second value -> 20px
+bottom -> 30px
+         10
+20                20
+         30
+
