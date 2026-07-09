@@ -1,0 +1,138 @@
+Your module-by-module plan is excellent
+Module 1 – Customer Management
+
+Deliver APK
+
+Features:
+
+Add Customer
+Edit Customer
+View Customer
+Search Customer
+Customer History
+
+Let him test it.
+
+Module 2 – Inventory Management
+
+Deliver APK
+
+Features:
+
+Add Material
+Material Type
+Size
+Rental Rate
+Total Stock
+Available Stock
+
+Example:
+
+Material	Size	Rate
+Prop	8ft	₹56
+Prop	10ft	₹65
+Sheet	Standard	₹120
+Module 3 – Rental Entry
+
+Deliver APK
+
+Features:
+
+Select Customer
+Select Materials
+Quantity
+Out Date
+Generate Issue Slip
+
+Stock automatically reduces.
+
+Module 4 – Partial Return
+
+Deliver APK
+
+Features:
+
+Select Rental
+Return Quantity
+Return Date
+
+Example:
+
+Issued:
+
+50 Props
+
+Returned:
+
+20 Props
+
+Pending:
+
+30 Props
+
+Stock automatically updates.
+
+Module 5 – Auto Billing Engine
+
+This is the heart of the system.
+
+Example:
+
+8ft Prop
+Qty: 20
+Rate: ₹56
+
+Out Date: 01-Jul
+Return Date: 31-Jul
+
+Amount = 20 × 56
+
+If date changes:
+
+Out Date: 01-Jul
+Return Date: 15-Aug
+
+The bill automatically recalculates.
+
+No manual calculation needed.
+
+Module 6 – Closing Bill
+
+Generate:
+
+Rental Summary
+Days
+Material-wise Charges
+Deposit Adjustment
+Final Amount
+
+PDF generation.
+
+Module 7 – Reports & Excel Export
+Customer Report
+Active Rentals
+Pending Materials
+Excel Download
+One thing you must clarify FIRST
+
+Ask him:
+
+"Sir, can you give me one real completed bill and one partial return bill from your logbook? I need to understand exactly how you calculate rent."
+
+Because the entire software depends on that calculation formula.
+
+For example:
+
+Formula A
+Amount = Qty × Monthly Rate × Months
+Formula B
+Amount = Qty × Daily Rate × Days
+Formula C
+First month full charge
+Extra days separate charge
+Formula D
+Minimum 30 days charge even if returned in 10 days
+
+You should not assume. Get 2–3 real examples from K.S & CO. and build the calculation engine around their existing business practice.
+
+Your decision to deliver one module → APK → review → next module is exactly how I'd handle a ₹15k project. It reduces rework and keeps the client involved throughout development.

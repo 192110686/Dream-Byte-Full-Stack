@@ -87,4 +87,18 @@ bottom -> 30px
          10
 20                20
          30
+Part 3: Border:
+-------------------
+The border is a line drawn around an element
+-> Border is a line that surrounds the content and padding.
+
+Border helps 
+->to make separate sections
+-> Highlight information
+-> make buttons visible
+-> create cards
+-> improve UI
+
+Example for Borders:
+-------------------
 
