@@ -112,7 +112,7 @@ The ID Selector is represented using the '#' symbol.
 
  CSS
 
-title{
+#title{
 color:red;
 }
 
@@ -338,7 +338,7 @@ Symbol
 
  ID Selector
 
-
+#
 
  Class Selector
 
@@ -416,7 +416,7 @@ Priority Order:
 
  Example:
 
-<h1 style="color:red;">Welcome</h1>
+<h1 style="color:red;" >Welcome</h1>
 
 ---
 
@@ -587,3 +587,187 @@ Key Points to Remember
 --------------------------
 
 Inline CSS > ID Selector > Class Selector > Element Selector > Universal Selector.
+
+Advanced Selectors:
+--------------------
+<div>
+  <p>Paragraph</p>
+</div>
+<p>Paragraph</p>
+
+Now i want to color only paragraph 1 with red color?
+
+p{
+color:red;
+}
+
+1. Descendant Selector (Space):
+------------------------------
+Syntax:
+parent child{
+}
+eg:
+div p{
+color:Red;
+}
+
+HTML:
+-----
+ <div>
+    <p>Paragraph</p>
+ </div>
+    <p>Paragraph</p>
+
+Meaning:
+-----------
+Select all p tags inside div 
+
+Why Descendant:
+-----------------
+Because the p is somewhere inside div.
+it doesn't have to be the direct child.
+
+2. Child Selector(>):
+-----------------------
+syntax:
+------
+parent>child{
+}
+
+the element has to be the direct child then only the css will be applied.
+
+3. Adjacent Sibling Selector(+):
+---------------------------------
+Syntax:
+-------
+element 1 + element2{
+}
+
+This selector helps us to target the first element immediately after another element.
+
+h1 + p{
+            color:blue;
+        }
+        p {
+            color:aqua;
+        }
+<h1>Title</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+4. General Sibling Selector(~):
+---------------------------
+Syntax:
+----------
+element1 ~ element2{
+}
+
+This selector helps us to target all the elements immediately after the another element.
+
+  h1 ~ p{
+            color:blue;
+        }
+<h1>Title</h1>
+    <p>Paragraph 1</p>
+    <p>Paragraph 2</p>
+
+5. Attribute Selector:
+-----------------------
+suppose we have many input fields?
+<input type="text">
+<input type="password">
+<input type="email">
+
+suppose we want to get the yellow background only for the text inputs?
+
+Syntax:
+-------
+input[type="text"]{
+background-color:yellow;
+}
+
+6.Pseudo Classes:
+----------------------
+What is a Pseudo Class?
+----------------------
+A pseudo class styles an element in a special state.
+eg:
+----
+Mouse over
+Clicked
+paused
+First Child
+Last child
+
+:hover
+-------------
+This style will be applied when mouse moves over an element.
+ button:hover {
+            background-color: red;
+        }
+<button>Click Me</button>
+
+Real Usage:
+------------
+buttons
+menus
+cards
+product boxes
+
+
+:focus
+-------------
+Applied when user clicks inside an input field.
+
+input:focus{
+        border:3px solid blue;
+       }
+<input type="text">
+
+:first-child
+----------------
+it selects the first child
+<ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Html</li>
+    </ul>
+
+  li:first-child{
+            color:Red;
+        }
+
+:last-child
+---------------
+it selects the last child.
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Html</li>
+    </ul>
+  li:last-child{
+            color:Red;
+        }
+
+:nth-child()
+-------------------
+Most powerful beginner pseudo-class, It selects the nth child and applies the css.
+  <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Html</li>
+    </ul>
+
+  li:nth-child(3){
+            color:Red;
+        }
+
+li:not(:nth-child(3)){
+            color:Red;
+        }
+styles all the items except the 3rd element.
+
+
+
+
+
