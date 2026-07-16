@@ -1,0 +1,96 @@
+CSS Display Properties:
+-------------------------
+What is display?
+----------------
+The display property determines how an element behaves on a webpage.
+It controls:
+-----------
+->whether the element starts on a new line
+-> whether it stays in the same line
+->whether width works
+->whether height works
+->whether the element is visible.
+
+Syntax:
+-----------
+display:value;
+
+properties:
+------------
+display:block;
+    <span>Hello</span>
+    <span>World</span>
+ span{
+            display:block;
+        }
+The inline element was converted into a block element.
+
+Characteristics of display:block;
+---------------------------------
+-> starts on a new line
+-> width works
+->height works
+->padding and margin also will work;
+
+display:inline
+-------------------
+ div{
+            display:inline;
+        }
+->height and width are ignored
+->element occupies only required space.
+ .box{
+          display:inline;  
+          width:200px;
+          height:200px;
+          border:2px solid red;
+        }
+    <div class="box">Hello</div>
+    <div class="box">World</div>
+
+display:inline-block
+-----------------------
+This is the  most important one
+Inline-block combines: Inline + block;
+characteristics:
+--------------------
+->same line like inline
+->width works like block
+->height works like block
+->margin and padding work like block
+
+Real life usage:
+---------------
+Before flexbox became popular:
+we used it in:
+->navigation bars
+->cards
+->menus
+->image galleries
+
+Comparison Table:
+----------------------
+Feature           Block    Inline    Inline-Block
+-------          --------  -------   -----------------
+new-line           yes        no          no
+width works        yes        no          yes
+height works       yes        no          yes
+padding            yes        limited     yes
+margin             yes        limited     yes
+
+display:none
+-------------
+completely removes an element from the webpage.
+
+eg:
+---
+display:none;
+
+->Not only element disappears
+->its space also disappears.
+
+visibility:hidden
+-----------------
+Makes the elmenent invisible.
+->element only disappears
+->but space remains.
