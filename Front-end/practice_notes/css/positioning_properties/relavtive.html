@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f7f7f7;
+            padding:30px;
+        }
+        h1{
+            text-align: center;
+        }
+        .playground{
+            width: 700px;
+            margin:30px auto;
+            padding:30px;
+            border:3px dashed black;
+            background-color: white;
+        }
+        .box{
+            width:180px;
+            height: 80px;
+            margin-bottom: 25px;
+            color:white;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            line-height: 80px;
+        }
+        .top-example{
+            background-color: crimson;
+            position: relative;
+            top:20px;
+        }
+        .left-example{
+            background-color:royalblue;
+            position: relative;
+            left:20px;
+        }
+        .right-example{
+            background-color: darkorange;
+            position: relative;
+            right:20px;
+        }
+        .bottom-example{
+            background-color: seagreen;
+            position: relative;
+            bottom:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Relative Offset Properties</h1>
+    <div class="playground">
+        <div class="box top-example">top:20px</div>
+        <div class="box left-example">left:100px</div>
+        <div class="box right-example">right:40px</div>
+        <div class="box bottom-example">bottom:20px</div>
+    </div>
+</body>
+</html>
