@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f1f5f9;
+            padding:50px;
+        }
+        h1{
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .product-card{
+            width: 280px;
+            margin:auto;
+            padding:20px;
+            border-radius: 12px;
+            background-color: white;
+            box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+            text-align: center;
+            position:relative;
+            transition:0.3s;
+        }
+        .product-card:hover{
+            top:-10px;
+        }
+        .product-card img{
+            width:100%;
+            border-radius: 8px;
+        }
+        .product-card h2{
+            margin:18px 0 10px;
+        }
+        .price{
+            color:green;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .product-card button{
+            margin-top: 15px;
+            padding:12px 24px;
+            border: none;
+            border-radius: 6px;
+            background-color: royalblue;
+            color: white;
+            cursor:pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Online Shopping Product Card</h1>
+    <div class="product-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.LgTlG3liBVOrWi6l6VFQmAHaHa?r=0&pid=Api&P=0&h=180" alt="Laptop">
+        <h2>Smart Laptop</h2>
+        <p>Powerful laptop for development and office work.</p>
+        <div class="price">&#8377;59,999</div>
+        <button>Add to Cart</button>
+    </div>
+</body>
+</html>
