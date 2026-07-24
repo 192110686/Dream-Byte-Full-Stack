@@ -567,6 +567,109 @@ Characteristics:
 </body>
 </html>
 
+Position: Sticky
+------------------------
+An element with position: sticky behaves like a relatively postioned element until a scroll threshold is reached
+->after reaching that threshold, it remains stuck at the specified location.
+
+Simple:
+---------
+It scrolls normally first
+Then it sticks.
+
+Characteristics:
+-----------------
+->Initially follows normal document flow
+->Requires an offset such as top:0
+->Sticks only within its containing scroll area
+->is affected by parent overflow settings
+->is commonly used for headings, tables and filters
+
+Box-Shadow:
+---------------
+box-shadow is used to add a shadow effect around an element
+Syntax:
+-------
+box-shadow:5px 5px 10px gray;
+5px ->shadow moves right
+5px->shadow moves down
+10px->blur amount
+gray->shadow color
+
+RGBA
+--------
+r->red
+g->green
+b->blue
+a->alpha(transparency)
+
+eg:
+background-color:rgba(255,0,0,0);
+red=255
+green=0
+blue=0
+alpha=0.5
+
+Alpha Values:
+--------------
+0 ->fully transparent
+0.2 ->very light
+0.5 -> 50% visible
+0.8 ->almost solid
+1 ->fully visible
+
+Z-Index:
+------------
+When positioned elements overlap, we may need to decide which one should appear on top.
+for this we use z-index.
+
+->A larger z-index value usually places the element above elements with smaller values.
+
+syntax:
+----------
+.box{
+position:absolute;
+z-index:2;
+
+
+Complete Comparison:
+-------------------
+Position Static:
+--------------
+Reference : Normal Document flow
+Original Space: Reserved
+Removed from flow: No
+Scrolling: Moves with page
+
+Position Relative:
+--------------------
+Reference: It's Original Position
+Original Space: Reserved
+Removed from flow: No
+Scrolling: Moves with page
+
+Position Absolute:
+------------------
+Reference: Nearest Positioned Ancestor
+Original Space: Not Reserved
+Removed from flow: Yes
+Scrolling: Moves with its page or Container
+
+Position Fixed:
+----------------
+Reference: Browser viewport
+Original Space: Not reserved
+Removed from flow: Yes
+Scrolling: Stays fixed
+
+Position Sticky:
+----------------
+Reference: It's normal position and scroll container
+Original Space: Reserved
+Removed from flow: No
+Scrolling: Scrolls first, then sticks
+
+
 
 
 
